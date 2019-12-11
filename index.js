@@ -21,21 +21,25 @@ function destructivelyRemoveLastKitten(){
 
 function destructivelyRemoveFirstKitten(){
   var newArr = kittens;
-  newArr.shift()
-  return newArr
+  newArr.shift();
+  return newArr;
 }
 
 function appendKitten(name){
-  var newArr = []
+  var newArr = [];
   newArr = kittens.map(item => newArr.push(item));
-  newArr.push(name)
-  return newArr
+  console.log(newArr);
+  newArr.push(name);
+  console.log(newArr);
+  return newArr;
 }
 
 function prependKitten(name){
   var newArr = []
   newArr = kittens.map(item => newArr.push(item));
+  console.log(newArr);
   newArr.unshift(name)
+  console.log(newArr);
   return newArr
 }
 
