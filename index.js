@@ -27,20 +27,18 @@ function destructivelyRemoveFirstKitten(){
 
 function appendKitten(name){
   var newArr = [];
+  var newKitten = name.split()
   newArr = kittens.map(item => newArr.push(item));
-  console.log(newArr);
-  newArr.push(name);
-  console.log(newArr);
+  newArr.concat(newKitten);
   return newArr;
 }
 
 function prependKitten(name){
   var newArr = []
+  var newKitten = name.split()
   newArr = kittens.map(item => newArr.push(item));
-  console.log(newArr);
-  newArr.unshift(name)
-  console.log(newArr);
-  return newArr
+  newKitten.concat(newArr);
+  return newKitten;
 }
 
 function removeLastKitten(){
