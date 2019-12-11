@@ -34,8 +34,7 @@ function appendKitten(name){
 
 function prependKitten(name){
   var newKitten = name.split()
-  newKitten.concat(kittens);
-  return newKitten;
+  return newKitten.concat(kittens);
 }
 
 function removeLastKitten(){
